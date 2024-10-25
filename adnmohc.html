@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Bons Profs - Landing Page</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f8fb;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: white;
+            position: fixed; /* Fixer la barre de navigation */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+        }
+
+        nav ul li a {
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Promo Bar */
+        .promo-bar {
+            background-color: #4e38f5;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 80px;
+        }
+
+        .promo-bar span {
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        .countdown {
+            display: inline-block;
+            background-color: #4e38f5;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-left: 20px;
+        }
+
+        .cta-button {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 50px;
+            text-align: center;
+            background-color: #f4f8fb;
+            margin-top: 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            color: #2b3a5d;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #4e38f5;
+            margin-bottom: 30px;
+        }
+
+        .hero img {
+            max-width: 40%;
+            height: auto;
+        }
+
+        /* Container for image and text */
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .description {
+            width: 60%;
+        }
+
+        .image {
+            width: 35%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2b3a5d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        footer ul li a {
+            color: white;
+        }
+
+        /* Fixer le bouton d'appel à l'action */
+        .fixed-cta-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        /* Effet de défilement doux */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <a href="index.html">
+        <img src="https://i.imgur.com/ZtJc9rS.jpg" alt="Logo hébergé sur Imgur">
+    </a>
+    <nav>
+        <ul>
+            <li><a href="#">Cours en ligne</a></li>
+            <li><a href="#">Cours particuliers</a></li>
+            <li><a href="#">Vidéos</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <a href="tel:0660307010" class="cta-button">0660307010</a>
+    <a href="tel:0676986268" class="cta-button">0676986268</a>
+</header>
+
+<!-- Promo Bar Section -->
+<div class="promo-bar">
+    Jusqu'à <span>40% de réduction</span> avec le code promo RENTREE24
+    <div class="countdown">
+        09 jours 01 h 47 m 38 s
+    </div>
+    <a href="#" class="cta-button">J'en profite !</a>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Les Bons Profs font les bons élèves</h1>
+    <p>La meilleure plateforme de soutien scolaire pour gagner 3 points de moyenne</p>
+    <img src="https://i.imgur.com/ZtJc9rS.jpg" alt="Image de soutien scolaire hébergée sur Imgur">
+    <p>Cours en ligne et cours particuliers dans toutes les matières, conformes au programme officiel 2024-2025.</p>
+    <a href="#" class="cta-button">Tester gratuitement !</a>
+</section>
+
+<!-- Section with text and image -->
+<section class="container">
+    <div class="description">
+        <h2>مرحبا بكم</h2>
+        <p>هذا هو وصف الصورة التي تظهر على اليمين. يمكنك كتابة أي نص هنا ليكون إلى يسار الصورة.</p>
+    </div>
+    <div class="image">
+        <img src="https://i.imgur.com/ZtJc9rS.jpg" alt="Contenu image hébergé sur Imgur">
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 Les Bons Profs. Tous droits réservés.</p>
+    <ul>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">Politique de confidentialité</a></li>
+    </ul>
+</footer>
+
+<!-- Fixed Call to Action Button -->
+<a href="#" class="cta-button fixed-cta-button">S'inscrire maintenant !</a>
+
+<script>
+    const countdown = document.querySelector('.countdown');
+    const endDate = new Date(Date.now() + 9 * 24 * 60 * 60 * 1000); // 9 jours à partir de maintenant
+
+    function updateCountdown() {
+        const now = new Date();
+        const timeLeft = endDate - now;
+
+        if (timeLeft < 0) {
+            countdown.innerHTML = "Temps écoulé!";
+            clearInterval(interval);
+            return;
+        }
+
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        countdown.innerHTML = `${days} jours ${hours} h ${minutes} m ${seconds} s`;
+    }
+
+    const interval = setInterval(updateCountdown, 1000);
+</script>
+
+</body>
+</html>
